@@ -1,0 +1,29 @@
+{
+  "courses": [
+    {
+      "course_id": "math_240",
+      "course_name": "Trigonometry",
+      "keywords": [
+        "math", "trig", "trigonometry", "sine", "cosine", "triangle", "angle", "240", 
+        "syllabus", "grading", "homework", "assignment", "quiz", "exam", "test", "due", "schedule"
+      ],
+      "file_path": "F:\\Coding\\vs_proj\\chatBot\\gemini_chat\\datasets and course examples\\math_240_trigonometry_syllabus.txt"
+    },
+    {
+      "course_id": "eng_poems_110",
+      "course_name": "English Poems 110",
+      "keywords": [
+        "english", "poem", "poems", "poetry", "literature", "stanza", "rhyme", "meter", "sonnet", "poet", "verse", "110"
+      ],
+      "file_path": "F:\\Coding\\vs_proj\\chatBot\\gemini_chat\\datasets and course examples\\English_poems_syllabus.txt"
+    },
+    {
+      "course_id": "chem_105",
+      "course_name": "General Chemistry I",
+      "keywords": [
+        "chemistry", "chem", "element", "molecule", "reaction", "acid", "base", "periodic table", "moles", "compound", "105"
+      ],
+      "file_path": "F:\\Coding\\vs_proj\\chatBot\\gemini_chat\\datasets and course examples\\General_Chem_syllabus.txt"
+    }
+  ]
+}

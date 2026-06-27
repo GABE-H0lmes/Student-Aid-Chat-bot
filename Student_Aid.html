@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Aid</title>
+    
+    <style>
+        /* Base Page Layout */
+        html, body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        /* Navigation styling */
+        .nav-bar {  
+            padding: 15px 20px;
+            background-color: #f4f4f9;
+            border-bottom: 1px solid #ddd;
+        }
+        .nav-bar table { width: 100%; }
+        .nav-bar a { text-decoration: none; color: #0056b3; font-weight: bold; }
+
+        /* --- COURSE SELECTION STYLES --- */
+        #course-selection-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            flex-grow: 1;
+        }
+
+        #course-selection-container h1 { color: #333; margin-bottom: 30px; }
+
+        .course-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .course-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px 30px;
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+
+        /* Updated colors for the new courses */
+        .card-math { border-left: 8px solid #0056b3; }
+        .card-english { border-left: 8px solid #6f42c1; } /* Purple for English */
+        .card-chemistry { border-left: 8px solid #fd7e14; }
+
+        .course-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+
+        .course-card h2 { margin: 0; font-size: 22px; color: #333; }
+        .course-card p { margin-top: 8px; color: #666; font-size: 15px; margin-bottom: 0; }
+
+        /* --- CHAT BOT STYLES --- */
+        /* Initially hidden using display: none */
+        #chat-container {
+            display: none; 
+            flex-direction: column;
+            padding: 20px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            flex-grow: 1;
+        }
+
+        #chat-box {
+            flex-grow: 1;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            line-height: 1.5;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        #user-input {
+            flex-grow: 1;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #00b30f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover { background-color: #06662e; }
+    </style>
+</head>
+<body>
+
+<div class="nav-bar">
+    <table>
+        <tr>
+            <td><a href="courses.html" target="_self" title="Course">Course</a></td>
+            <td style="width: 80%;"></td> 
+            <td><a href="Student_Aid.html" target="_self" title="Student Aid">Go to Student Aid</a></td>
+        </tr>
+    </table>
+</div>
+
+<div id="course-selection-container">
+    <h1>Select a Course for Tutoring</h1>
+    
+    <div class="course-list">
+        <div class="course-card card-math" onclick="startChat('math_240', 'Math')">
+            <h2>Math</h2>
+            <p>Trigonometry & Pre-Calculus</p>
+        </div>
+
+        <div class="course-card card-english" onclick="startChat('eng_poems_110', 'English Poems')">
+            <h2>English Poems</h2>
+            <p>Poetry Analysis & Literature</p>
+        </div>
+
+        <div class="course-card card-chemistry" onclick="startChat('chem_105', 'Chemistry')">
+            <h2>Chemistry</h2>
+            <p>General Chemistry I</p>
+        </div>
+    </div>
+</div>
+
+<div id="chat-container">
+    <div id="chat-box"></div>
+    
+    <div class="input-group">
+        <input type="text" id="user-input" placeholder="Type a message to your Teaching Assistant...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+// We will store the selected course here just in case your backend needs it later
+let activeCourseId = '';
+
+// This function runs when a course card is clicked
+function startChat(courseId, courseName) {
+    activeCourseId = courseId;
+    
+    // 1. Hide the course selection screen
+    document.getElementById('course-selection-container').style.display = 'none';
+    
+    // 2. Show the chat container
+    document.getElementById('chat-container').style.display = 'flex';
+    
+    // 3. Post a welcome message confirming the course
+    const chatBox = document.getElementById('chat-box');
+    chatBox.innerHTML = `<p style="color: gray;"><em>System: Connected to ${courseName}. How can I help you today?</em></p>`;
+}
+
+async function sendMessage() {
+    const inputField = document.getElementById('user-input');
+    const chatBox = document.getElementById('chat-box');
+    const message = inputField.value.trim();
+
+    if (!message) return;
+
+    chatBox.innerHTML += `<p><strong>Student:</strong> ${message}</p>`;
+    inputField.value = '';
+
+    try {
+        const response = await fetch('http://127.0.0.1:5000/ask', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            // Sending the activeCourseId along with the message
+            body: JSON.stringify({ message: message, course: activeCourseId })
+        });
+
+        const data = await response.json();
+
+        if (data.reply) {
+            const ytRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/g;
+            
+            let formattedReply = data.reply.replace(ytRegex, function(match, videoId) {
+                return `<br><iframe width="100%" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 8px; margin-top: 10px; max-width: 560px;"></iframe><br>`;
+            });
+
+            chatBox.innerHTML += `<p><strong>Student Aid:</strong><br> ${formattedReply}</p>`;
+        } else {
+            chatBox.innerHTML += `<p style="color:red;"><strong>Error:</strong> ${data.error}</p>`;
+        }
+    } catch (error) {
+        chatBox.innerHTML += `<p style="color:red;"><strong>Error:</strong> Could not connect to server.</p>`;
+    }
+
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+// Allow pressing "Enter" to send
+document.getElementById('user-input').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        sendMessage();
+    }
+});
+</script>
+
+</body>
+</html>

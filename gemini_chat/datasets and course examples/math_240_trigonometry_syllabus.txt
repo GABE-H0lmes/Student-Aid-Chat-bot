@@ -1,0 +1,683 @@
+========================================================================
+                       APEX HORIZON UNIVERSITY
+                      Department of Mathematics
+========================================================================
+
+COURSE:     MATH 240: Advanced Trigonometry & Spatial Geometry
+TERM:       Fall 2026
+CREDITS:    4.0
+PREREQ:     MATH 120 (College Algebra) or equivalent placement
+
+INSTRUCTOR INFO:
+----------------
+Instructor:  Dr. Evelyn Vance
+Email:       e.vance@apexhorizon.edu
+Office Hours: Tuesdays & Thursdays, 
+              2:00 PM - 4:00 PM 
+              (Science Hall, Room 402)
+
+COURSE OVERVIEW:
+----------------
+Welcome to MATH 240!
+This course isn't just about memorizing triangles; 
+it's about understanding the periodic rhythms of the universe and how 
+we map three-dimensional space.
+We will journey from the foundational 
+unit circle to complex trigonometric identities, vectors, and polar 
+coordinate systems.
+By December, you'll look at waves, bridges, and 
+video game graphics with a whole new perspective.
+
+REQUIRED MATERIALS:
+-------------------
+* Textbook: Trigonometry: A Spatial Approach, 4th Edition, 
+  by Larsen & Miller.
+* Technology: A graphing calculator (TI-84 Plus or equivalent) is 
+  required daily.
+We will also utilize GeoGebra (free) for 3D modeling 
+  assignments.
+
+GRADING & EVALUATION:
+---------------------
+Assessment                     | Weight | Description
+------------------------------------------------------------------------
+Weekly Homework                | 15%    | Due every Monday via portal.
+Quizzes                        | 15%    | Bi-weekly conceptual check-ins.
+Midterm Exams (2)              | 40%    | Exam 1 (Wk 6), Exam 2 (Wk 11).
+The "Real-World Wave" Project  | 10%    | Collaborative modeling project.
+Final Examination              | 20%    | Cumulative final assessment.
+
+* Late Work Policy: Late homework is accepted up to 48 hours past the 
+  deadline for a maximum of 70% credit.
+
+WEEKLY LECTURE SCHEDULE:
+------------------------
+
+Phase 1: The Foundations & The Unit Circle
+* Week 1:  Introduction to Angular Measurement (Radians vs. Degrees, 
+           Arc Length, and Sector Area).
+* Week 2:  The Six Trigonometric Functions via the Unit Circle.
+* Week 3:  Graphing Trigonometric Functions (Sine, Cosine, Tangent) 
+           and Mastering Amplitude, Period, and Phase Shifts.
+
+Phase 2: Analytic Trigonometry
+* Week 4:  Fundamental Identities (Pythagorean, Quotient, and Reciprocal).
+* Week 5:  Verifying Trigonometric Identities and Solving Trigonometric 
+           Equations.
+* Week 6:  MIDTERM EXAM 1 & Introduction to Addition and Subtraction 
+           Formulas.
+* Week 7:  Double-Angle, Half-Angle, and Product-to-Sum Formulas.
+
+Phase 3: Applications to Geometry & Vectors
+* Week 8:  Non-Right Triangles: The Law of Sines and the Law of Cosines 
+           (The Ambiguous Case explored).
+* Week 9:  Polar Coordinates: Graphing polar equations (r = a sin(b theta)) 
+           and converting to rectangular forms.
+* Week 10: Parametric Equations and Projectile Motion.
+* Week 11: MIDTERM EXAM 2 & Introduction to Vectors in Two Dimensions.
+
+Phase 4: Advanced & Spatial Concepts
+* Week 12: Dot Products, Orthogonality, and Vector Projections.
+* Week 13: Complex Numbers in Polar Form & De Moivre's Theorem.
+* Week 14: PROJECT PRESENTATIONS & Introduction to 3D Spherical 
+           Trigonometry (Navigation and Astronomy).
+* Week 15: Final Review Week.
+
+COURSE POLICIES & ACADEMIC INTEGRITY:
+-------------------------------------
+* Attendance: While attendance isn't directly graded, trigonometry 
+  is highly sequential.
+  Missing one lecture can make the next three 
+  feel like a foreign language.
+  Arrive on time and ready to engage.
+  
+* Collaboration: Study groups are highly encouraged!
+  Discussing homework problems with peers is an excellent way to learn.
+  However, the final scratchpad and work you submit must be your own 
+  independent work.
+
+* Academic Honesty: Any form of cheating on quizzes or exams will 
+  result in an immediate failing grade for the assignment and a 
+  referral to the Academic Integrity Board.
+  Keep it honest.
+
+========================================================================
+========================================================================
+                   ADDITIONAL COURSE COMPONENT: COMPREHENSIVE STUDY NOTEBOOK
+========================================================================
+
+------------------------------------------------------------------------
+PART I: OFFICIAL COURSE LECTURE NOTES & EXAMPLES
+------------------------------------------------------------------------
+
+UNIT 1: ANGULAR MEASUREMENT & THE UNIT CIRCLE (Weeks 1-2)
+
+1.1 Radians vs. Degrees
+The degree system (360 degrees for a full revolution) is an arbitrary historical 
+convention inherited from the Babylonians. In advanced mathematical analysis, 
+the radian is the natural unit of angular measurement. A radian is defined as 
+the angle subtended at the center of a circle by an arc whose length is equal 
+to the radius of the circle.
+
+Conversion Formulas:
+  - To convert Degrees to Radians: multiply by (pi / 180 deg)
+  - To convert Radians to Degrees: multiply by (180 deg / pi)
+
+1.2 Arc Length and Sector Area
+Given a circle of radius r and a central angle theta measured strictly in RADIANS:
+  - Arc Length (s): s = r * theta
+  - Area of a Sector (A): A = 0.5 * (r^2) * theta
+
+*Example Problem:*
+A circular irrigation system has a sweep radius of 45 meters. The system pivots 
+through an angle of 135 degrees. Find the length of the outer arc swept by the 
+system and the total area irrigated.
+*Solution:*
+1. Convert 135 degrees to radians: theta = 135 * (pi / 180) = 3*pi / 4 radians.
+2. Compute Arc Length: s = 45 * (3*pi / 4) = 135*pi / 4 meters ≈ 106.03 meters.
+3. Compute Area: A = 0.5 * (45^2) * (3*pi / 4) = 0.5 * 2025 * (3*pi / 4) 
+   A = 6075*pi / 8 square meters ≈ 2,385.65 square meters.
+
+1.3 The Six Trigonometric Functions via the Unit Circle
+Consider a circle with radius r = 1 centered at the origin (0,0) in the Cartesian 
+plane. Any angle theta in standard position intersects the unit circle at a point 
+P(x, y). The six trigonometric functions are explicitly defined as:
+  - cos(theta) = x
+  - sin(theta) = y
+  - tan(theta) = y / x  (where x != 0)
+  - sec(theta) = 1 / x  (where x != 0)
+  - csc(theta) = 1 / y  (where y != 0)
+  - cot(theta) = x / y  (where y != 0)
+
+------------------------------------------------------------------------
+UNIT 2: ANALYTIC TRIGONOMETRY & IDENTITIES (Weeks 4-5)
+
+2.1 Fundamental Identities
+Every algebraic manipulation in advanced spatial modeling depends on these rules:
+
+Pythagorean Identities:
+  - sin^2(theta) + cos^2(theta) = 1
+  - 1 + tan^2(theta) = sec^2(theta)
+  - 1 + cot^2(theta) = csc^2(theta)
+
+Quotient and Reciprocal Identities:
+  - tan(theta) = sin(theta) / cos(theta)
+  - cot(theta) = cos(theta) / sin(theta)
+  - sec(theta) = 1 / cos(theta)
+  - csc(theta) = 1 / sin(theta)
+
+2.2 Verification Strategy
+To verify an identity, start with the more complex side and transform it into 
+the simpler side using valid algebraic and trigonometric steps. Never treat an 
+identity like an equation where you move terms across the equals sign.
+
+*Example Verification:*
+Verify that: (sec^2(theta) - 1) / sec^2(theta) = sin^2(theta)
+*Proof:*
+Left Hand Side (LHS):
+= (sec^2(theta) - 1) / sec^2(theta)
+Using the Pythagorean identity sec^2(theta) - 1 = tan^2(theta):
+= tan^2(theta) / sec^2(theta)
+Convert to sine and cosine equivalents:
+= (sin^2(theta) / cos^2(theta)) / (1 / cos^2(theta))
+Multiply by the reciprocal:
+= (sin^2(theta) / cos^2(theta)) * (cos^2(theta) / 1)
+Cancel the cos^2(theta) terms:
+= sin^2(theta)
+LHS = RHS. The identity is verified.
+
+------------------------------------------------------------------------
+UNIT 3: VECTORS AND SPATIAL GEOMETRY (Weeks 11-12)
+
+3.1 Component Form of Vectors
+A vector v in two-dimensional space can be represented from an initial point to 
+a terminal point. In component form, v = <v1, v2>, where v1 is the horizontal 
+change and v2 is the vertical change.
+  - Magnitude: ||v|| = sqrt(v1^2 + v2^2)
+  - Direction Angle: theta satisfies tan(theta) = v2 / v1
+
+3.2 Dot Product and Orthogonality
+The dot product of u = <u1, u2> and v = <v1, v2> is defined as:
+  u . v = u1*v1 + u2*v2
+An alternative geometric formula is:
+  u . v = ||u|| * ||v|| * cos(alpha)
+where alpha is the angle between the two vectors.
+  - Critical Property: Two vectors u and v are orthogonal (perpendicular) if and 
+    only if u . v = 0.
+
+========================================================================
+PART II: FAKE ASSIGNMENTS (PRACTICE PROBLEMS SETS)
+========================================================================
+
+------------------------------------------------------------------------
+ASSIGNMENT 1: WEEK 3 PROBLEM SET - GRAPHING & PERIODIC PHENOMENA
+------------------------------------------------------------------------
+Due: Monday, September 14, 2026, by 11:59 PM via Course Portal.
+Total Points: 50 points.
+
+Problem 1 (15 points): 
+A standard tidal wave pattern in a local bay can be modeled using the periodic 
+sinusoidal function:
+  H(t) = 4.5 * cos((pi / 6) * t - pi / 3) + 6.2
+where H(t) represents the depth of the water in meters, and t represents the 
+time in hours past midnight.
+  (a) Determine the amplitude, period, vertical shift, and phase shift of H(t).
+  (b) Find the maximum and minimum water depth in the bay.
+  (c) Sketch one complete cycle of this function by hand, labeling all five 
+      critical key points (intercepts, maximums, and minimums).
+
+Problem 2 (15 points):
+Completely graph the function f(x) = -3 * sin(2x + pi/2) over the interval 
+[-pi, pi]. State the exact coordinates of all local extrema and x-intercepts.
+
+Problem 3 (20 points):
+An engineer is studying an acoustic hum generated by an electrical transformer. 
+The pressure wave is modeled by P(t) = 0.08 * sin(120 * pi * t). 
+  (a) What is the frequency of the sound wave in Hertz (cycles per second)?
+  (b) If an out-of-phase noise cancellation wave Q(t) = 0.08 * sin(120 * pi * t + alpha) 
+      is introduced, what must the value of the phase shift alpha be to completely 
+      silence the hum? Prove your answer using trigonometric sum identities.
+
+------------------------------------------------------------------------
+ASSIGNMENT 2: WEEK 7 PROBLEM SET - ADVANCED ANALYTIC IDENTITIES
+------------------------------------------------------------------------
+Due: Monday, October 12, 2026, by 11:59 PM via Course Portal.
+Total Points: 50 points.
+
+Instructions: Show all structural algebraic steps clearly. No credit will be given 
+for raw answers without proper step-by-step verification pathways.
+
+Problem 1 (15 points):
+Verify the following double-angle identity:
+  cos(2*theta) = (1 - tan^2(theta)) / (1 + tan^2(theta))
+
+Problem 2 (15 points):
+Find the exact value of sin(pi / 12) using a half-angle identity. Do not provide 
+a decimal approximation; leave your final answer in simplest radical form.
+
+Problem 3 (20 points):
+Solve the trigonometric equation exactly over the interval [0, 2*pi):
+  2 * sin^2(x) - 3 * sin(x) + 1 = 0
+Hint: Use standard quadratic factoring techniques by letting u = sin(x).
+
+------------------------------------------------------------------------
+ASSIGNMENT 3: WEEK 12 PROBLEM SET - VECTORS & PRODUCT PROPERTIES
+------------------------------------------------------------------------
+Due: Monday, November 16, 2026, by 11:59 PM via Course Portal.
+Total Points: 50 points.
+
+Problem 1 (15 points):
+Given vectors u = <3, -4> and v = <-2, 6>:
+  (a) Compute the vector component addition: 3u - 2v.
+  (b) Calculate the magnitude ||u|| and the direction angle of u relative to 
+      the positive x-axis.
+
+Problem 2 (20 points):
+Find the angle alpha (in degrees, rounded to two decimal places) between the 
+two structural force vectors:
+  F1 = <5, 12>  and  F2 = <-3, 4>
+Utilize the dot product geometric definition.
+
+Problem 3 (15 points):
+Decompose the vector w = <4, 7> into two distinct components: one vector parallel 
+to v = <1, 1> and another vector completely orthogonal to v. Show the projection 
+formula steps explicitly.
+
+========================================================================
+PART III: FAKE TEST (MIDTERM EXAM 1 REPLICA)
+========================================================================
+
+APEX HORIZON UNIVERSITY
+MATH 240: Advanced Trigonometry & Spatial Geometry
+MIDTERM EXAM 1 - PROCTORED QUESTION BANK
+Time Allowed: 75 Minutes | Total Marks: 100 points
+
+STUDENT NAME: ___________________________
+STUDENT ID:   ___________________________
+
+INSTRUCTIONS:
+  1. No books or notes allowed. One scientific or graphing calculator permitted.
+  2. Write your answers clearly in the spaces provided.
+  3. Show all work to receive partial credit.
+
+------------------------------------------------------------------------
+SECTION A: MULTIPLE CHOICE (25 Points total, 5 points each)
+------------------------------------------------------------------------
+
+1. What is the exact radian measure of an angle of -240 degrees?
+   (A) -4*pi / 3
+   (B) -3*pi / 4
+   (C) -5*pi / 6
+   (D) -2*pi / 3
+
+2. If sin(theta) = -3/5 and theta is located in Quadrant III, what is the exact 
+   value of sec(theta)?
+   (A) -5/4
+   (B) 5/4
+   (C) -4/5
+   (D) -5/3
+
+3. What is the standard fundamental period of the function f(x) = 4 * tan(3x)?
+   (A) pi / 3
+   (B) 2*pi / 3
+   (C) pi
+   (D) 4*pi / 3
+
+4. Evaluate the exact numeric product expression: cos(75 deg) * cos(15 deg).
+   (A) 1/4
+   (B) 1/2
+   (C) sqrt(3) / 4
+   (D) 1
+
+5. Which of the following expressions is exactly equivalent to csc(x) - sin(x)?
+   (A) cot(x)*cos(x)
+   (B) tan(x)*sin(x)
+   (C) sec(x)*cos(x)
+   (D) 1
+
+------------------------------------------------------------------------
+SECTION B: SHORT ANSWER & CALCULATIONS (45 Points total)
+------------------------------------------------------------------------
+
+Question 6 (15 points):
+A technical drawing shows a standard mechanical gear where the central angle is 
+measured at 2.4 radians. If the radius of the outer gear ring is exactly 12.5 cm, 
+find the exact length of the corresponding outer gear arc.
+
+Question 7 (15 points):
+Solve the trigonometric equation over the domain [0, 2*pi):
+  sqrt(2) * cos(x) + 1 = 0
+
+Question 8 (15 points):
+Using the appropriate angle sum or difference formula, find the exact value of 
+cos(105 deg) without using a calculator.
+
+------------------------------------------------------------------------
+SECTION C: ADVANCED PROOFS & EXTENSIONS (30 Points total)
+------------------------------------------------------------------------
+
+Question 9 (30 points):
+Prove the following comprehensive identity thoroughly. State the algebraic steps 
+and the identity rule applied at each transition phase.
+  [ sin(x) / (1 + cos(x)) ] + [ (1 + cos(x)) / sin(x) ] = 2 * csc(x)
+==================================================
+PRACTICE PROBLEMS & EXAMPLE BANK
+==================================================
+Use these problems as templates or direct examples when a student asks for practice or explanations on specific topics.
+
+--------------------------------------------------
+FOUNDATIONS OF TRIGONOMETRY
+--------------------------------------------------
+
+TOPIC: Right Triangle Trigonometry (SOH CAH TOA)
+
+- Problem 1: In a right triangle, the side adjacent to angle θ is 8 inches, and the hypotenuse is 10 inches. Find cos(θ) and sin(θ).
+  Step 1: Use the cosine definition: cos(θ) = adjacent / hypotenuse = 8 / 10 = 0.8.
+  Step 2: Use the Pythagorean theorem (a^2 + b^2 = c^2) to find the missing opposite side: 8^2 + opposite^2 = 10^2 -> 64 + opposite^2 = 100 -> opposite^2 = 36 -> opposite = 6.
+  Step 3: Use the sine definition: sin(θ) = opposite / hypotenuse = 6 / 10 = 0.6.
+  Final Answer: cos(θ) = 0.8, sin(θ) = 0.6
+
+- Problem 2: An observer looks up at a flag pole with an angle of elevation of 45 degrees. If the observer is standing 15 feet away from the base of the pole, how tall is the flagpole?
+  Step 1: Identify the parts. The distance away is the adjacent side (15 ft). The flagpole height is the opposite side. The angle is 45°.
+  Step 2: Use Tangent: tan(45°) = opposite / adjacent -> tan(45°) = height / 15.
+  Step 3: Know that tan(45°) = 1. So, 1 = height / 15. Multiply both sides by 15.
+  Final Answer: The flagpole is 15 feet tall.
+
+- Problem 3: Find the cosecant (csc), secant (sec), and cotangent (cot) of an angle θ if sin(θ) = 3/5 and cos(θ) = 4/5.
+  Step 1: Reciprocal rules: csc(θ) = 1 / sin(θ) = 5/3.
+  Step 2: Reciprocal rules: sec(θ) = 1 / cos(θ) = 5/4.
+  Step 3: Quotient rules: cot(θ) = cos(θ) / sin(θ) = (4/5) / (3/5) = 4/3.
+  Final Answer: csc(θ) = 5/3, sec(θ) = 5/4, cot(θ) = 4/3
+
+
+TOPIC: Converting between Degrees and Radians
+
+- Problem 1: Convert 150 degrees into radians. Leave the answer in terms of pi.
+  Step 1: Use the conversion formula: radians = degrees * (pi / 180).
+  Step 2: Multiply: 150 * (pi / 180) = 150pi / 180.
+  Step 3: Simplify the fraction 150/180 by dividing the top and bottom by 30: 150/30 = 5, 180/30 = 6.
+  Final Answer: 5pi / 6 radians
+
+- Problem 2: Convert 3pi / 4 radians into degrees.
+  Step 1: Use the conversion formula: degrees = radians * (180 / pi).
+  Step 2: Multiply: (3pi / 4) * (180 / pi). The pi terms cancel each other out.
+  Step 3: Calculate: (3 * 180) / 4 = 540 / 4 = 135.
+  Final Answer: 135 degrees
+
+- Problem 3: Convert -60 degrees into radians.
+  Step 1: Multiply by (pi / 180): -60 * (pi / 180) = -60pi / 180.
+  Step 2: Simplify by dividing top and bottom by 60.
+  Final Answer: -pi / 3 radians
+
+
+TOPIC: The Unit Circle Explained
+
+- Problem 1: Identify the exact (x, y) coordinates on the unit circle for an angle of 30 degrees.
+  Step 1: Remember that coordinates on the unit circle are defined as (cos(θ), sin(θ)).
+  Step 2: Look up or calculate basic values: cos(30°) = sqrt(3)/2 and sin(30°) = 1/2.
+  Final Answer: (sqrt(3)/2, 1/2)
+
+- Problem 2: What are the coordinates on the unit circle for an angle of 270 degrees?
+  Step 1: 270 degrees points straight down along the negative y-axis.
+  Step 2: The radius of the unit circle is 1, so moving straight down gives an x of 0 and a y of -1.
+  Final Answer: (0, -1)
+
+- Problem 3: Determine which quadrant the angle 5pi / 4 radians lies in, and whether its sine value is positive or negative.
+  Step 1: Convert to degrees to visualize easily: (5 * 180) / 4 = 225 degrees.
+  Step 2: 225 degrees is between 180° and 270°, meaning it sits in Quadrant III.
+  Step 3: In Quadrant III, both x and y coordinates are negative. Since sine represents the y-coordinate, it must be negative.
+  Final Answer: Quadrant III, Negative
+
+
+TOPIC: Evaluating Trigonometric Functions
+
+- Problem 1: Find the exact value of sin(240°).
+  Step 1: Find the reference angle. 240° is in Quadrant III. The formula is: 240° - 180° = 60°.
+  Step 2: Find sin(60°) from foundational memory: sin(60°) = sqrt(3)/2.
+  Step 3: Apply the quadrant sign. In Quadrant III, sine (y-axis) is negative.
+  Final Answer: -sqrt(3)/2
+
+- Problem 2: Find the exact value of tan(135°).
+  Step 1: Find the reference angle. 135° is in Quadrant II. The formula is: 180° - 135° = 45°.
+  Step 2: Evaluate sine and cosine for 45°: sin(45°) = sqrt(2)/2, cos(45°) = sqrt(2)/2.
+  Step 3: Calculate tangent: tan(45°) = sin(45°) / cos(45°) = 1.
+  Step 4: Check quadrant signs. In Quadrant II, sine is positive and cosine is negative, making tangent negative.
+  Final Answer: -1
+
+- Problem 3: Find the exact value of sec(pi / 6).
+  Step 1: Identify the relationship: sec(x) = 1 / cos(x).
+  Step 2: Find cos(pi/6) [which is cos(30°)]: cos(30°) = sqrt(3)/2.
+  Step 3: Take the reciprocal: 1 / (sqrt(3)/2) = 2 / sqrt(3).
+  Step 4: Rationalize the denominator by multiplying top and bottom by sqrt(3).
+  Final Answer: 2*sqrt(3) / 3
+
+
+--------------------------------------------------
+GRAPHING AND MODELS
+--------------------------------------------------
+
+TOPIC: Graphing Sine and Cosine Functions
+
+- Problem 1: Does the basic graph of y = sin(x) start at the origin (0,0) or at (0,1)? Explain using unit circle values.
+  Step 1: Plug x = 0 into the function: y = sin(0).
+  Step 2: On the unit circle, the y-coordinate at 0 degrees is 0, so sin(0) = 0.
+  Final Answer: It starts at the origin (0,0).
+
+- Problem 2: Identify the five key x-values used to graph one full period of y = cos(x) starting at x = 0.
+  Step 1: A standard period is 2pi. Divide it into 4 equal quarters.
+  Step 2: Start at 0, add pi/2 each step: 0, pi/2, pi, 3pi/2, 2pi.
+  Final Answer: 0, pi/2, pi, 3pi/2, 2pi
+
+- Problem 3: Describe the visual difference between the graph of y = sin(x) and y = -sin(x).
+  Step 1: The negative sign in front of the function acts as a vertical reflection.
+  Step 2: Instead of moving upward first to a peak of 1, the graph of y = -sin(x) starts at 0 and goes downward first to a low point of -1.
+  Final Answer: It is reflected vertically over the x-axis.
+
+
+TOPIC: Amplitude, Period, and Phase Shift
+
+- Problem 1: Find the amplitude and period of the function: y = 4 cos(2x).
+  Step 1: The amplitude is the absolute value of the number in front: |4| = 4.
+  Step 2: The period formula is 2pi / B, where B is the number inside with x. Here, B = 2.
+  Step 3: Calculate: Period = 2pi / 2 = pi.
+  Final Answer: Amplitude = 4, Period = pi
+
+- Problem 2: Find the phase shift of the function: y = sin(x - pi/4).
+  Step 1: Look at the horizontal shift inside the parenthesis: (x - C).
+  Step 2: If it is subtraction, the graph shifts to the right. If it is addition, it shifts left.
+  Final Answer: Phase shift is pi/4 units to the right.
+
+- Problem 3: Given the equation y = -3 sin(4x + pi), identify its amplitude and horizontal shift configuration.
+  Step 1: Amplitude is always positive: |-3| = 3.
+  Step 2: Factor out the 4 inside the parenthesis to find the true phase shift: 4(x + pi/4).
+  Step 3: Because it is addition, the shift moves in the negative direction.
+  Final Answer: Amplitude = 3, Phase Shift = pi/4 units to the left
+
+
+--------------------------------------------------
+TRIANGLES AND APPLICATIONS
+--------------------------------------------------
+
+TOPIC: Law of Sines
+
+- Problem 1: In triangle ABC, angle A = 30°, angle B = 45°, and side a = 8 cm. Find the length of side b.
+  Step 1: Use Law of Sines: a / sin(A) = b / sin(B) -> 8 / sin(30°) = b / sin(45°).
+  Step 2: Plug in values: 8 / (0.5) = b / (sqrt(2)/2).
+  Step 3: Solve for b: 16 = b / (sqrt(2)/2) -> b = 16 * (sqrt(2)/2) = 8*sqrt(2).
+  Final Answer: b = 8*sqrt(2) cm (approx. 11.31 cm)
+
+- Problem 2: Why can you NOT use the Law of Sines if you only know all three side lengths (Side-Side-Side) of a triangle?
+  Step 1: The Law of Sines requires at least one complete known ratio pairing an angle with its opposite side (like a and A).
+  Step 2: If you only have sides a, b, and c, you do not have any angles, leaving every single fraction in the equation with an unknown variable.
+  Final Answer: You lack a completed angle-side ratio pair to solve the equation.
+
+- Problem 3: In triangle ABC, angle A = 60°, side a = 12, and side b = 10. Set up the equation to find angle B.
+  Step 1: Apply the Law of Sines layout: sin(A)/a = sin(B)/b.
+  Step 2: Substitute values: sin(60°) / 12 = sin(B) / 10.
+  Step 3: Isolate sin(B): sin(B) = (10 * sin(60°)) / 12.
+  Final Answer: sin(B) = (10 * 0.866) / 12
+
+
+TOPIC: Law of Cosines
+
+- Problem 1: In triangle ABC, side b = 5 cm, side c = 8 cm, and the included angle A = 60°. Find the length of side a.
+  Step 1: Use Law of Cosines: a^2 = b^2 + c^2 - 2bc*cos(A).
+  Step 2: Plug in values: a^2 = 5^2 + 8^2 - 2(5)(8)*cos(60°).
+  Step 3: Calculate: a^2 = 25 + 64 - 80*(0.5) -> a^2 = 89 - 40 = 49.
+  Step 4: Take the square root of 49.
+  Final Answer: side a = 7 cm
+
+- Problem 2: In a triangle, side a = 3, b = 4, and c = 5. Find the angle C opposite to side c.
+  Step 1: Use Law of Cosines rearranged: c^2 = a^2 + b^2 - 2ab*cos(C).
+  Step 2: Plug in values: 5^2 = 3^2 + 4^2 - 2(3)(4)*cos(C) -> 25 = 9 + 16 - 24*cos(C).
+  Step 3: Simplify: 25 = 25 - 24*cos(C) -> 0 = -24*cos(C) -> cos(C) = 0.
+  Step 4: Determine the angle where cos is 0: arccos(0) = 90 degrees.
+  Final Answer: Angle C = 90 degrees (This is a 3-4-5 right triangle!)
+
+- Problem 3: When should a student choose the Law of Cosines over the Law of Sines?
+  Step 1: Look at the given information. Use Law of Cosines when given all three sides (SSS) or two sides and the angle trapped between them (SAS).
+  Final Answer: Use when dealing with SSS or SAS triangle scenarios.
+
+
+TOPIC: Solving Word Problems with Trigonometry
+
+- Problem 1: A 20-foot ladder leans against a wall. The safety sticker says the angle the ladder makes with the ground must be 60 degrees. How high up the wall does the ladder reach?
+  Step 1: The ladder represents the hypotenuse (20 ft). The height up the wall is the opposite side. The ground angle is 60°.
+  Step 2: Use Sine: sin(60°) = height / 20.
+  Step 3: Calculate: height = 20 * sin(60°) = 20 * (sqrt(3)/2) = 10*sqrt(3).
+  Final Answer: The ladder reaches 10*sqrt(3) feet high (approx. 17.32 feet).
+
+- Problem 2: A surveyor stands 100 meters away from the base of a building and measures an angle of elevation to the roof to be 30 degrees. Find the height of the building.
+  Step 1: The ground distance is adjacent (100m). The building height is opposite.
+  Step 2: Use Tangent: tan(30°) = height / 100.
+  Step 3: Look up value: tan(30°) = sqrt(3)/3 (approx 0.577).
+  Step 4: Calculate: height = 100 * 0.577 = 57.7 meters.
+  Final Answer: The building is approximately 57.7 meters tall.
+
+- Problem 3: A boat travels 12 miles directly North, then makes a 90-degree turn and travels 5 miles directly East. What is the straight-line distance back to the start point?
+  Step 1: This forms a right triangle where the two legs are 12 miles and 5 miles.
+  Step 2: Use the Pythagorean theorem to find the hypotenuse: c^2 = 12^2 + 5^2 -> c^2 = 144 + 25 = 169.
+  Step 3: Take the square root of 169.
+  Final Answer: The distance back to the start is 13 miles.
+
+
+--------------------------------------------------
+BASIC IDENTITIES & EQUATIONS
+--------------------------------------------------
+
+TOPIC: Pythagorean and Quotient Identities
+
+- Problem 1: Simplify the trigonometric expression: sin(x) * cot(x).
+  Step 1: Use the Quotient Identity to rewrite cotangent: cot(x) = cos(x) / sin(x).
+  Step 2: Rewrite expression: sin(x) * [cos(x) / sin(x)].
+  Step 3: The sin(x) terms in the numerator and denominator cancel out.
+  Final Answer: cos(x)
+
+- Problem 2: Given that sin(θ) = 5/13 and θ is in Quadrant I, use the Pythagorean Identity to find cos(θ).
+  Step 1: State the fundamental identity: sin^2(θ) + cos^2(θ) = 1.
+  Step 2: Plug in sine: (5/13)^2 + cos^2(θ) = 1 -> 25/169 + cos^2(θ) = 1.
+  Step 3: Subtract: cos^2(θ) = 1 - 25/169 -> cos^2(θ) = 144/169.
+  Step 4: Take the square root. Since it is Quadrant I, cosine is positive.
+  Final Answer: cos(θ) = 12/13
+
+- Problem 3: Simplify the expression: 1 - sin^2(x).
+  Step 1: Rearrange the identity sin^2(x) + cos^2(x) = 1.
+  Step 2: Subtract sin^2(x) from both sides to isolate cos^2(x).
+  Final Answer: cos^2(x)
+
+
+TOPIC: Solving Basic Trigonometric Equations
+
+- Problem 1: Solve the equation for x on the interval [0, 360°]: 2 sin(x) - 1 = 0.
+  Step 1: Isolate the sine term: 2 sin(x) = 1 -> sin(x) = 1/2.
+  Step 2: Find the angles on the unit circle where the y-coordinate is positive 1/2.
+  Step 3: This occurs in Quadrant I (30 degrees) and Quadrant II (180° - 30° = 150 degrees).
+  Final Answer: x = 30° and x = 150°
+
+- Problem 2: Solve the equation on the interval [0, 2pi]: cos(x) + 1 = 0.
+  Step 1: Isolate the cosine term: cos(x) = -1.
+  Step 2: Find the radian locations on the unit circle where the x-coordinate is exactly -1.
+  Step 3: This only occurs at the far left side of the circle, which corresponds to pi.
+  Final Answer: x = pi
+
+- Problem 3: Solve the equation: tan(x) - 1 = 0 on the interval [0, 360°].
+  Step 1: Isolate tangent: tan(x) = 1.
+  Step 2: Tangent is positive 1 where sine and cosine have identical values and signs.
+  Step 3: This happens in Quadrant I (45 degrees) and Quadrant III (180° + 45° = 225 degrees).
+  Final Answer: x = 45° and x = 225°
+==================================================
+RECOMMENDED VIDEO RESOURCES
+==================================================
+If a student is struggling with a topic, provide them with the relevant video link exactly as written below:
+Foundations of Trigonometry:
+- Right Triangle Trigonometry (SOH CAH TOA): https://youtu.be/PUB0TaZ7bhA?si=LQ9sMXh53jPepcby
+- Converting between Degrees and Radians: https://youtu.be/NBoadeWvUdw?si=9exbuY_dF_-Ethup
+- The Unit Circle Explained: https://www.youtube.com/watch?v=1m9peXoQbgE
+- Evaluating Trigonometric Functions: https://youtu.be/V8LEHEzdU2U?si=Gz2Pl8DbtcQlrwh1
+
+Graphing and Models:
+- Graphing Sine and Cosine Functions:https://youtu.be/57VrEiEPD1I?si=c73ksS-44DseCXj1
+- Amplitude, Period, and Phase Shift: https://youtu.be/P0iRHgp3--w?si=wfXwNj8FOFN-TX-t
+
+Triangles and Applications:
+- Law of Sines: https://www.youtube.com/watch?v=8qpeE-3_R9k
+- Law of Cosines: https://youtu.be/9CGY0s-uCUE?si=KFe76BOx9CYdchB6
+- Solving Word Problems with Trigonometry: https://youtu.be/uyKvSe6Ltgs?si=1ZVnam0GOAwTPxMj
+
+Basic Identities & Equations:
+- Pythagorean and Quotient Identities: https://youtu.be/TpADRvW8zm8?si=pwKNPC7hG04fYYhbhttps://youtu.be/TpADRvW8zm8?si=pwKNPC7hG04fYYhb
+- Solving Basic Trigonometric Equations:https://youtu.be/VMAMARmmDac?si=dl-LCxXeTCxsfMXB
+
+If a student asks for a list of videos that cover all of trigonometry link the video References below. If a student asks for an worksheet list then link the images within the database:
+========================================================================
+NEW MATERIAL ADDED: 02:58 PM on Wednesday, June 24, 2026
+========================================================================
+Video Reference: https://youtu.be/9OOrhA2iKak
+
+
+
+
+========================================================================
+NEW MATERIAL ADDED: 02:58 PM on Wednesday, June 24, 2026
+========================================================================
+Video Reference: https://youtu.be/FgC37PSIZ8U?si=Ye0SNdaP2g4NyFKd
+
+
+
+
+========================================================================
+NEW MATERIAL ADDED: 02:59 PM on Wednesday, June 24, 2026
+========================================================================
+Video Reference: https://youtu.be/bm8oYKKlCXI?si=sTvEtJXC2pIzzDop
+
+
+
+
+========================================================================
+NEW MATERIAL ADDED: 02:59 PM on Wednesday, June 24, 2026
+========================================================================
+Video Reference: https://youtu.be/m1OitPmkydY?si=hvJnHLs0gtexf4bM
+
+
+
+
+========================================================================
+NEW MATERIAL ADDED: 03:01 PM on Wednesday, June 24, 2026
+========================================================================
+Image Reference: http://127.0.0.1:5000/static/images/Geometry-Worksheet-Trig-Ratios-in-Right-Triangles-with-Answers-966203603.webp
+
+
+
+
+========================================================================
+NEW MATERIAL ADDED: 03:03 PM on Wednesday, June 24, 2026
+========================================================================
+
+
+
+========================================================================
+NEW MATERIAL ADDED: 06:24 PM on Friday, June 26, 2026
+========================================================================
+Video Reference: https://www.youtube.com/watch?v=I9BKbq2MVfg
+
+

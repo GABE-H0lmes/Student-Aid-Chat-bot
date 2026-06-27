@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Data Aid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .creator-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 35px;
+            width: 100%;
+            max-width: 650px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            box-sizing: border-box;
+        }
+
+        /* Updated Main Header Styling */
+        h1 { margin-top: 0; color: #333; font-size: 26px; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 25px; }
+
+        .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+        .form-group label { font-weight: bold; color: #4a5568; font-size: 14px; }
+
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        .form-group input[type="file"] {
+            padding: 8px;
+            background-color: #fff;
+        }
+
+        .form-group textarea { resize: vertical; min-height: 120px; }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #00b30f;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover { background-color: #06662e; }
+
+        .status-banner {
+            display: none;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .success { background-color: #c6f6d5; color: #22543d; }
+        .error { background-color: #fed7d7; color: #822727; }
+    </style>
+</head>
+<body>
+
+<div class="creator-card">
+    <h1>Teachers Data Aid</h1>
+    
+    <div id="status-msg" class="status-banner"></div>
+
+    <div class="form-group">
+        <label for="course-select">Target Course Dataset</label>
+        <select id="course-select">
+            <option value="math_240">Math 240 (Trigonometry)</option>
+            <option value="eng_poems_110">English Poems 110</option>
+            <option value="chem_105">Chemistry 105</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="image-upload">Upload Reference Image (Optional)</label>
+        <input type="file" id="image-upload" accept="image/*">
+    </div>
+
+    <div class="form-group">
+        <label for="video-link">Supplemental Video Link (URL)</label>
+        <input type="text" id="video-link" placeholder="https://www.youtube.com/watch?v=...">
+    </div>
+
+    <div class="form-group">
+        <label for="main-content">Core Reference Text</label>
+        <textarea id="main-content" placeholder="Paste new syllabus notes, homework rules, or lecture text here... Make sure to describe the image if you uploaded one!"></textarea>
+    </div>
+
+    <button onclick="submitToBackend()">Update Course Dataset</button>
+</div>
+
+<script>
+async function submitToBackend() {
+    const courseId = document.getElementById('course-select').value;
+    const videoLink = document.getElementById('video-link').value.trim();
+    const mainContent = document.getElementById('main-content').value.trim();
+    const imageFile = document.getElementById('image-upload').files[0];
+    const statusBox = document.getElementById('status-msg');
+
+    if (!mainContent && !videoLink && !imageFile) {
+        showStatus("Please enter text, a video link, or an image before submitting.", false);
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('course_id', courseId);
+    formData.append('text', mainContent);
+    formData.append('video', videoLink);
+    if (imageFile) {
+        formData.append('image', imageFile);
+    }
+
+    try {
+        const response = await fetch('http://127.0.0.1:5000/add_material', {
+            method: 'POST',
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            showStatus("✓ " + data.success, true);
+            // Clear the form fields after success
+            document.getElementById('video-link').value = '';
+            document.getElementById('main-content').value = '';
+            document.getElementById('image-upload').value = '';
+        } else {
+            showStatus("Error: " + data.error, false);
+        }
+    } catch (error) {
+        showStatus("Connection Error: Make sure your Python server is running!", false);
+    }
+}
+
+function showStatus(message, isSuccess) {
+    const statusBox = document.getElementById('status-msg');
+    statusBox.textContent = message;
+    statusBox.className = 'status-banner ' + (isSuccess ? 'success' : 'error');
+    statusBox.style.display = 'block';
+    
+    if (isSuccess) {
+        setTimeout(() => { statusBox.style.display = 'none'; }, 5000);
+    }
+}
+</script>
+
+</body>
+</html>

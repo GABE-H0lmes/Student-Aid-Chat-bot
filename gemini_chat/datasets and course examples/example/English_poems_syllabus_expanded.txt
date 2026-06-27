@@ -1,0 +1,73 @@
+APEX HORIZON UNIVERSITY
+Department of English
+
+COURSE:     ENGL 210: Introduction to English Poems & Poetic Craft
+TERM:       Fall 2026
+CREDITS:    4.0
+PREREQ:     ENGL 101 (Freshman Composition) or equivalent
+
+INSTRUCTOR INFO:
+----------------
+Instructor:  Prof. Julian Vance
+Email:       j.vance@apexhorizon.edu
+Office Hours: Mondays & Wednesdays, 1:00 PM - 3:00 PM (Humanities Hall, Room 304)
+
+COURSE OVERVIEW:
+----------------
+Welcome to ENGL 210! This course is a hands-on workshop focused entirely on the instruction and creation of English poetry. We will explore how language, rhythm, and imagery are woven together to create emotional resonance and meaning. You will learn the mechanical building blocks of classic forms, transition into contemporary free verse, and ultimately produce a refined portfolio of original poetry. 
+
+REQUIRED MATERIALS:
+-------------------
+* Textbook: The Making of a Poem: A Norton Anthology of Poetic Forms, by Mark Strand and Eavan Boland.
+* Technology: A dedicated digital writing journal (e.g., Google Docs, Notion) is required for daily writing prompts and peer review sessions.
+
+GRADING & EVALUATION:
+---------------------
+Assessment                     | Weight | Description
+------------------------------------------------------------------------
+Weekly Poem Drafts             | 15%    | Due every Monday via portal.
+Workshop Critiques             | 15%    | Bi-weekly peer review feedback.
+Midterm Portfolios (2)         | 40%    | Submission 1 (Wk 6), Submission 2 (Wk 11).
+The "Ekphrastic" Project       | 10%    | A collaborative art-to-poetry project.
+Final Chapbook                 | 20%    | Cumulative final portfolio of 10 poems.
+
+WEEKLY LECTURE SCHEDULE:
+------------------------
+
+Phase 1: The Foundations of Sound and Rhythm
+* Week 1: Introduction to Poetic Meter (Syllables, Stress, and Scansion).
+* Week 2: The Iamb, Trochee, and Anapest (Finding the heartbeat of a line).
+* Week 3: Sonic Devices (Alliteration, Assonance, Consonance, and Slant Rhyme).
+
+Phase 2: Closed Forms and Constraints
+* Week 4: The Sonnet (Petrarchan vs. Shakespearean and mastering the Volta).
+* Week 5: The Villanelle and Pantoum (The emotional power of repetition).
+* Week 6: MIDTERM PORTFOLIO 1 & The Haiku and Tanka (Economy of language).
+* Week 7: Odes and Elegies (Writing in praise and in mourning).
+
+Phase 3: Breaking the Rules & Free Verse
+* Week 8: The Shift to Free Verse (Whitman, Dickinson, and modern departures).
+* Week 9: Line Breaks and Enjambment (Controlling the reader's breath).
+* Week 10: Imagery and the Objective Correlative (Show, don't tell).
+* Week 11: MIDTERM PORTFOLIO 2 & Introduction to Prose Poetry.
+
+Phase 4: Advanced Concepts and Polish
+* Week 12: Ekphrastic Poetry (Writing inspired by visual art).
+* Week 13: The Persona Poem (Writing from outside your own perspective).
+* Week 14: PROJECT PRESENTATIONS & The Editing Process (Trimming the fat).
+* Week 15: Final Chapbook Review and Public Reading Workshop.
+
+COURSE POLICIES:
+----------------
+* Attendance: Poetry is highly collaborative. Missing a workshop deprives your peers of valuable critique.
+* Academic Honesty: Submitting AI-generated poems or plagiarizing published works will result in an immediate failing grade.
+
+========================================================================
+                   ADDITIONAL COURSE COMPONENT: COMPREHENSIVE STUDY NOTEBOOK
+========================================================================
+
+UNIT 1: METRICAL MEASUREMENT & THE FOOT (Weeks 1-2)
+------------------------------------------------------------------------
+
+* Iambic Pentameter: An iamb is a metrical foot consisting of one unstressed syllable followed by one stressed syllable. Pentameter means there are five iambs in a line.
+* Structural Terms: Enjambment, Caesura, Volta.
